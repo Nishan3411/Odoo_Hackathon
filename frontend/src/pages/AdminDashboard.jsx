@@ -1,6 +1,7 @@
 import { Activity, UsersRound } from 'lucide-react'
 import PageHeader from '../components/common/PageHeader'
 import { adminMetrics, trips } from '../data/mockData'
+import { currency } from '../utils/formatters'
 
 function AdminDashboard() {
   return (
@@ -41,7 +42,7 @@ function AdminDashboard() {
                   <tr key={trip.id} className="border-t border-slate-100">
                     <td className="py-4 font-semibold text-slate-900">{trip.title}</td>
                     <td><span className="rounded-full bg-sky-50 px-3 py-1 text-xs font-bold text-sky-700">{trip.status}</span></td>
-                    <td className="text-slate-600">${trip.budget}</td>
+                    <td className="text-slate-600">{currency(trip.budget)}</td>
                     <td className="text-slate-600">{trip.completion}%</td>
                   </tr>
                 ))}

@@ -8,14 +8,14 @@ function Login() {
     <main className="grid min-h-screen bg-slate-950 lg:grid-cols-[1.1fr_0.9fr]">
       <section className="relative hidden overflow-hidden lg:block">
         <img
-          src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee?auto=format&fit=crop&w=1400&q=80"
-          alt="Mountain travel route"
+          src="https://images.unsplash.com/photo-1524492412937-b28074a5d7da?auto=format&fit=crop&w=1400&q=80"
+          alt="Indian heritage travel route"
           className="h-full w-full object-cover opacity-80"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/35 to-transparent" />
         <div className="absolute bottom-10 left-10 max-w-xl text-white">
-          <p className="text-sm font-bold uppercase tracking-wide text-teal-200">Traveloop</p>
-          <h1 className="mt-3 text-5xl font-black leading-tight">Plan every stop without losing the plot.</h1>
+          <p className="text-sm font-bold uppercase tracking-wide text-orange-200">Traveloop India</p>
+          <h1 className="mt-3 text-5xl font-black leading-tight">Plan every ghat, fort, beach, and hill stop.</h1>
         </div>
       </section>
       <section className="grid place-items-center p-6">

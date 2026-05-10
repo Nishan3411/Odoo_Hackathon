@@ -5,6 +5,8 @@ import { budgetBreakdown, budgetTimeline } from '../data/mockData'
 import { currency } from '../utils/formatters'
 
 function Budget() {
+  const shortRupees = (value) => `₹${Math.round(value / 1000)}k`
+
   return (
     <>
       <PageHeader eyebrow="Money" title="Budget" description="Track total spend, compare planned and actuals, and keep trip costs visible." />
@@ -17,7 +19,7 @@ function Budget() {
               <LineChart data={budgetTimeline}>
                 <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
                 <XAxis dataKey="day" tick={{ fontSize: 12 }} />
-                <YAxis tickFormatter={(value) => `$${value}`} tick={{ fontSize: 12 }} />
+                <YAxis tickFormatter={shortRupees} tick={{ fontSize: 12 }} />
                 <Tooltip formatter={(value) => currency(value)} />
                 <Line type="monotone" dataKey="planned" stroke="#0284c7" strokeWidth={3} />
                 <Line type="monotone" dataKey="actual" stroke="#14b8a6" strokeWidth={3} />
@@ -33,7 +35,7 @@ function Budget() {
             <BarChart data={budgetBreakdown}>
               <CartesianGrid strokeDasharray="3 3" stroke="#e2e8f0" />
               <XAxis dataKey="name" tick={{ fontSize: 12 }} />
-              <YAxis tickFormatter={(value) => `$${value}`} tick={{ fontSize: 12 }} />
+              <YAxis tickFormatter={shortRupees} tick={{ fontSize: 12 }} />
               <Tooltip formatter={(value) => currency(value)} />
               <Bar dataKey="value" fill="#f97360" radius={[6, 6, 0, 0]} />
             </BarChart>

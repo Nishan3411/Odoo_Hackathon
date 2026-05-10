@@ -14,9 +14,9 @@ function CreateTrip() {
       <div className="grid gap-6 xl:grid-cols-[1fr_0.75fr]">
         <form className="rounded-lg border border-slate-200 bg-white p-5 travel-card-shadow">
           <div className="grid gap-4 md:grid-cols-2">
-            <Input label="Trip name" icon={MapPinned} placeholder="Mediterranean Loop" />
-            <Input label="Travel dates" icon={Calendar} placeholder="Jun 12 - Jun 24, 2026" />
-            <Input label="Starting city" placeholder="Barcelona" />
+            <Input label="Trip name" icon={MapPinned} placeholder="Golden Triangle Getaway" />
+            <Input label="Travel dates" icon={Calendar} placeholder="Oct 12 - Oct 21, 2026" />
+            <Input label="Starting city" placeholder="Delhi" />
             <Input label="Travelers" icon={Users} placeholder="4" />
           </div>
           <label className="mt-4 block">

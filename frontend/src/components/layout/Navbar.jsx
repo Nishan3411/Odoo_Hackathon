@@ -17,7 +17,7 @@ function Navbar({ onMenuClick }) {
           <Menu className="h-5 w-5" />
         </button>
         <Link to="/dashboard" className="flex items-center gap-2 lg:hidden">
-          <span className="grid h-9 w-9 place-items-center rounded-lg bg-sky-600 font-bold text-white">T</span>
+          <span className="grid h-9 w-9 place-items-center rounded-lg bg-gradient-to-br from-orange-500 via-teal-500 to-sky-600 font-bold text-white">T</span>
           <span className="text-lg font-bold text-slate-950">Traveloop</span>
         </Link>
         <div className="hidden max-w-md flex-1 md:block">

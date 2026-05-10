@@ -27,7 +27,7 @@ const links = [
   { to: '/budget', label: 'Budget', icon: WalletCards },
   { to: '/packing', label: 'Packing', icon: CheckSquare },
   { to: '/notes', label: 'Notes', icon: FileText },
-  { to: '/public/mediterranean-loop', label: 'Public View', icon: ClipboardList },
+  { to: '/public/golden-triangle', label: 'Public View', icon: ClipboardList },
   { to: '/profile', label: 'Profile', icon: User },
   { to: '/admin', label: 'Admin', icon: Shield },
 ]
@@ -38,16 +38,16 @@ function Sidebar({ open, onClose }) {
       <div className={classNames('fixed inset-0 z-40 bg-slate-950/40 lg:hidden', open ? 'block' : 'hidden')} onClick={onClose} />
       <aside
         className={classNames(
-          'fixed inset-y-0 left-0 z-50 w-72 border-r border-slate-200 bg-white transition-transform lg:sticky lg:top-0 lg:z-20 lg:h-screen lg:translate-x-0',
+          'fixed inset-y-0 left-0 z-50 w-72 border-r border-orange-100 bg-white transition-transform lg:sticky lg:top-0 lg:z-20 lg:h-screen lg:translate-x-0',
           open ? 'translate-x-0' : '-translate-x-full',
         )}
       >
         <div className="flex h-16 items-center justify-between px-5">
           <NavLink to="/dashboard" className="flex items-center gap-3">
-            <span className="grid h-10 w-10 place-items-center rounded-lg bg-sky-600 text-lg font-black text-white">T</span>
+            <span className="grid h-10 w-10 place-items-center rounded-lg bg-gradient-to-br from-orange-500 via-teal-500 to-sky-600 text-lg font-black text-white shadow-lg shadow-orange-100">T</span>
             <div>
               <p className="text-lg font-black text-slate-950">Traveloop</p>
-              <p className="text-xs font-semibold text-teal-600">Travel planning OS</p>
+              <p className="text-xs font-semibold text-orange-600">India travel planning OS</p>
             </div>
           </NavLink>
           <button className="grid h-9 w-9 place-items-center rounded-lg hover:bg-slate-100 lg:hidden" onClick={onClose}>

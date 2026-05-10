@@ -11,7 +11,7 @@ function PackingChecklist() {
       <PageHeader
         eyebrow="Packing"
         title="Packing Checklist"
-        description={`${complete} of ${checklist.length} items are ready for the Mediterranean Loop.`}
+        description={`${complete} of ${checklist.length} items are ready for the Golden Triangle Getaway.`}
         action={<Button icon={Plus}>Add item</Button>}
       />
       <section className="rounded-lg border border-slate-200 bg-white p-5 travel-card-shadow">

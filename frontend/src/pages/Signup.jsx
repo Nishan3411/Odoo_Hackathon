@@ -5,13 +5,13 @@ import Input from '../components/common/Input'
 
 function Signup() {
   return (
-    <main className="grid min-h-screen place-items-center bg-[#f4f8fb] p-6">
+    <main className="grid min-h-screen place-items-center p-6">
       <div className="w-full max-w-5xl overflow-hidden rounded-lg bg-white shadow-2xl lg:grid lg:grid-cols-[0.9fr_1.1fr]">
-        <section className="bg-sky-700 p-8 text-white">
-          <span className="grid h-12 w-12 place-items-center rounded-lg bg-white font-black text-sky-700">T</span>
-          <h1 className="mt-8 text-3xl font-black">Create your travel planning workspace.</h1>
+        <section className="bg-gradient-to-br from-orange-600 via-teal-700 to-sky-800 p-8 text-white">
+          <span className="grid h-12 w-12 place-items-center rounded-lg bg-white font-black text-orange-600">T</span>
+          <h1 className="mt-8 text-3xl font-black">Create your India travel planning workspace.</h1>
           <p className="mt-4 leading-7 text-sky-100">
-            Build multi-city routes, invite friends, track budgets, and keep every note in one calm place.
+            Build multi-city routes across India, invite friends, track rupee budgets, and keep every note in one calm place.
           </p>
           <div className="mt-8 rounded-lg bg-white/10 p-4">
             <p className="text-sm font-semibold">Demo setup</p>
